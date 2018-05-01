@@ -1,13 +1,13 @@
 # UE Codage : projet informatique
 
-## description du projet
+## Description du projet
 
 Insérez ici une brève description de votre projet.
 
-## composition de l'équipe
+## Composition de l'équipe
 
-* membre 1
-* membre 2
+* membre 1 : responsable de ...
+* membre 2 : responsable de ...
 * etc
 
 
