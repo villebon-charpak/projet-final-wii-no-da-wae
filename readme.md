@@ -2,13 +2,14 @@
 
 ## Description du projet
 
-Insérez ici une brève description de votre projet.
+Jeu 2D (side scroller) avec gestion de parcelle et de march� online.
 
 ## Composition de l'équipe
 
-* membre 1 : responsable de ...
-* membre 2 : responsable de ...
-* etc
+* Quent1  : responsable de Progamation Maison
+* Nour    : responsable de Progamation Monde
+* Mathieu : responsable de Graphisme Maison
+* Adrien  : responsable de Graphisme Monde
 
 
 
