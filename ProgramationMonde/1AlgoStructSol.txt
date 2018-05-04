@@ -5,7 +5,7 @@ structure : Sol
 	VolumePierre = rand
 	VolumeTerre  = complementaire (1 - PuissancePierre)
 	
-	
+	batDessus = new Bat		 => 	Prod Relle Pierre et Terre
 	
 	
 	

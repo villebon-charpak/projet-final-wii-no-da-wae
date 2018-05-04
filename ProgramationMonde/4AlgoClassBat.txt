@@ -1,0 +1,8 @@
+pour i allant de 1 à (nombre de fichiers dans le dossier "Batiments"):
+	recuperer dans le fichier i fichier:
+		Nom
+		lien vers image
+		differentes productions
+		new bat -> Nom, Image, Prod
+	
+	

@@ -1,4 +1,5 @@
 structure : Bat
+	Nom : Champ, Mine...
 	appartient a un Sol :	 ==>	position + Volume de ressources
 	image : texture (meme taille qu' une parcelle)
 	
