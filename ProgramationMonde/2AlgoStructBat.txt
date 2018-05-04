@@ -1,0 +1,13 @@
+structure : Bat
+	appartient a un Sol :	 ==>	position + Volume de ressources
+	image : texture (meme taille qu' une parcelle)
+	
+	Prod en fonction de la pierre
+	Prod en fonction de la terre
+	
+	Prod Relle Pierre = Prod en fonction de la pierre * Volume de Pierre
+	Prod Relle Terre  = Prod en fonction de la  Terre * Volume de  Terre
+	
+	
+	
+	

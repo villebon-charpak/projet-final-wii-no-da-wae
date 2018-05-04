@@ -1,0 +1,15 @@
+structure : Sol
+	positionX
+	positionY
+	
+	VolumePierre = rand
+	VolumeTerre  = complementaire (1 - PuissancePierre)
+	
+	
+	
+	
+	
+	
+
+
+
