@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class initSol : MonoBehaviour {
 
 
-	float bors = 30;
+	float bors = 32;
 
 
 
@@ -39,8 +40,9 @@ public class initSol : MonoBehaviour {
 					var liaison = creer (tmp, "Texture/Transition/TerrePierre");
 					deplacer (liaison, 4 * i+0.157f, -1.053f,-0.1f);
 				}
-				var terre = creer (name,source);
-				deplacer (terre, 2+4*i,-1);
+				var pierre = creer (name,source);
+				pierre.AddComponent<build>();
+				deplacer (pierre, 2+4*i,-1);
 				prec = 0;
 			}
 			else
@@ -53,6 +55,7 @@ public class initSol : MonoBehaviour {
 					deplacer (liaison, 4 * i, -1.032f,-0.1f);
 				}
 				var terre = creer (name,source);
+				terre.AddComponent<build>();
 				deplacer (terre, 2+4*i,-0.95f);
 				prec = 1;
 			}
@@ -69,8 +72,8 @@ public class initSol : MonoBehaviour {
 		string nameG = "fenceG";
 		var FD = creer (nameD,source);
 		var FG = creer (nameG,source);
-		deplacer (FD,   bors,ytranslate);
-		deplacer (FG,-1*bors,ytranslate);
+		deplacer (FD,   bors,ytranslate,-2f);
+		deplacer (FG,-1*bors,ytranslate,-2f);
 	}
 	
 	void Start ()

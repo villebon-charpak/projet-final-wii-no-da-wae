@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
 
 public class daynight : MonoBehaviour {
+	int i = 1;
+	void Start ()	{	}
 
-    public float daytime = 10f;
-    private float boucle = 1;
-    // Update is called once per frame
-
-    void Update() {
-
-        while (boucle == 1) {
-            transform.localScale = new Vector3(24f, -6f, 1);
-            new WaitForSeconds(daytime);
-            transform.localScale = new Vector3(24f, 6f, 1);
-            new WaitForSeconds(daytime);
-
-        }
-    }
+	void Update()
+	{
+		if (i == 100)
+		{
+			transform.localScale = new Vector3(24f, -6f, 1);
+		}
+		if (i == 200)
+		{
+			transform.localScale = new Vector3(24f, 6f, 1);
+			i = 0;
+		}
+		i += 1;
+		//Debug.Log (i);
+	}
 }

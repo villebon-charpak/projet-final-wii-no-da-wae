@@ -6,7 +6,7 @@ public class movement_horizontal : MonoBehaviour {
 	float x = 0;
 	float precx = 0;
 	float speedmodifier = (float)0.1;
-	double bord = 29;
+	double bord = 31.8;
 	string lien = "Texture/Perso/";
 	int i = 1;
 
@@ -41,3 +41,4 @@ public class movement_horizontal : MonoBehaviour {
 		precx = x;
 	}
 }
+
