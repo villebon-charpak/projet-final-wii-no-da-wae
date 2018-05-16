@@ -3,42 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class movement_horizontal : MonoBehaviour {
-	float x=0;
+	float x = 0;
+	float precx = 0;
 	float speedmodifier = (float)0.1;
-	double bordrightmax = 29;
-	double bordleftmax = -29;
+	double bord = 29;
+	string lien = "Texture/Perso/";
+	int i = 1;
 
 	void Start()
 	{
-		transform.position = new Vector3(x, 0f, -3f);
+		
 	}
+
 	void FixedUpdate()
 	{
-		float X = x * speedmodifier;
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		Vector3 movement = new Vector3 (X, 0f, -3f);
-		Debug.Log(moveHorizontal);
-		if (x <= bordrightmax/speedmodifier && moveHorizontal >= 0) {
-			
-			x = moveHorizontal + x;
-			transform.position = movement;
 
+		x = transform.position.x;
+		float mv = Input.GetAxis ("Horizontal");
+		if ((x < bord && mv > 0) || (x > -bord && mv < 0))
+		{
+			transform.position += new Vector3 (mv*speedmodifier, 0f, 0f);
+		}
 
-		} else if (x >= bordleftmax/speedmodifier && moveHorizontal <= 0) {
-			
-			x = moveHorizontal + x;
-			transform.position = movement;
+		if (precx != x) {
+			var result = Resources.Load<Sprite> (lien + i.ToString ());
+			GameObject.Find ("PersoTexture").GetComponent<SpriteRenderer> ().sprite = result;
 
-		} else if (x > bordleftmax/speedmodifier && x < bordrightmax/speedmodifier) {
-			
-			x = moveHorizontal + x;
-			transform.position = movement;
-
+			if (i == 5) {
+				i = 1;
+			} else {
+				i += 1;
+			}
 		}
 
 		//Debug.Log (x);
-		//-----------------------------------------------------------------------------
-		//--		Le x de la position est 10x trop grand mais OSEF ca marche       --
-		//-----------------------------------------------------------------------------
+
+		precx = x;
 	}
 }
