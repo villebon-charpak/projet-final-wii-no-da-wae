@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Game>
+<Player id="1">
+  <Food>5</Food>
+  <AliveTmp>0</AliveTmp>
+  <Resouces type="wheat">
+    <nb>5</nb>
+  </Resouces>
+  <Resouces type="gold">
+    <nb>1</nb>
+  </Resouces>
+</Player>
+<Trad>
+  <Resouces type="wheat">
+    <Price>1</Price>
+    <Stock>10</Stock>
+  </Resouces>
+  <Resouces type="gold">
+    <Price>5</Price>
+    <Stock>10</Stock>
+  </Resouces>
+</Trad>
+</Game>
